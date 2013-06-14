@@ -22,6 +22,6 @@ If you fork this repository, you can <a href="https://dashboard.stackmob.com/mod
 
 ## Moving EntryPointExtender.java
 
-Do you want a different folder structure for your Java files?  You will need to modify `pom.xml` and keep `EntryPointExtender.java`.
+Did you change your Java package? (`com.myproject.customcode`).   Be sure you update `pom.xml` with `EntryPointExtender.java`'s location.
 
-Locate `<mainClass>com.stackmob.customcode.EntryPointExtender</mainClass>`  (line 78) in your `pom.xml`.  Be sure to update it to the new location of your EntryPointeExtender.java, if you've moved it.
+Update `<mainClass>com.stackmob.customcode.EntryPointExtender</mainClass>`  (line 78) in your `pom.xml` to the appropriate package.
