@@ -19,6 +19,7 @@ package com.stackmob.customcode;
 import com.stackmob.core.customcode.CustomCodeMethod;
 import com.stackmob.core.jar.JarEntryObject;
 import com.stackmob.customcode.HelloWorld;
+import com.stackmob.customcode.CreateCustomer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +30,7 @@ public class EntryPointExtender extends JarEntryObject {
   public List<CustomCodeMethod> methods() {
     List<CustomCodeMethod> list = new ArrayList<CustomCodeMethod>();
     list.add(new HelloWorld());
+    list.add(new CreateCustomer());
     return list;
   }
 
